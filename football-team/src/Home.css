@@ -1,0 +1,67 @@
+/* Stilizare carousel */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-text {
+    position: absolute;
+    top: 20px; /* Mutăm textul în partea de sus */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 1em 1.5em;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 90%;
+    font-size: 1.2em;
+    font-weight: bold;
+    z-index: 2; /* Asigurăm că textul este deasupra imaginii */
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+  }
+  
+  .carousel-btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+  }
+  
+  .carousel-btn.left {
+    left: 10px;
+  }
+  
+  .carousel-btn.right {
+    right: 10px;
+  }
+  

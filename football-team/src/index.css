@@ -1,0 +1,339 @@
+/* Culori principale */
+:root {
+  --primary-color: #c8102e; /* Roșu Liverpool */
+  --secondary-color: #ffffff; /* Alb */
+  --accent-color: #fbe122; /* Galben pentru accente */
+  --text-color: #333; /* Negru pentru text */
+  --background-color: #f4f4f4; /* Fundal neutru */
+}
+
+/* Resetări de bază */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+}
+
+/* Container principal */
+main {
+  padding: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 2em 1em;
+  text-align: center;
+  position: relative;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+header h1 {
+  font-size: 2em;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
+
+.navbar a:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 1em 0;
+  text-align: center;
+}
+
+/* Carduri */
+.player-grid {
+  display: flex;
+  flex-wrap: wrap; /* Permite cardurilor să treacă pe rânduri noi dacă e nevoie */
+  justify-content: center; /* Aliniază cardurile pe mijloc orizontal */
+  gap: 1.5em; /* Spațiere între carduri */
+  padding: 2em;
+}
+.player-card, .news-card {
+  flex: 0 0 200px; /* Dimensiune fixă pentru fiecare card */
+  background-color: var(--secondary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.player-card:hover, .news-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-color);
+}
+
+.player-card .player-image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+.player-card h3, .news-card h3 {
+  color: var(--primary-color);
+}
+
+/* Paginare */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  gap: 0.5em;
+}
+
+.pagination-button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.pagination-button:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+.pagination-button.active {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Hero și CTA */
+.hero, .cta {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 3em 2em;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 2em;
+}
+
+.hero h2, .cta h3 {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+
+.cta {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* Mesaje de eroare */
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 0.3em;
+}
+
+/* Formulare */
+/* Formular Contact */
+.contact-form {
+  max-width: 600px;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: var(--secondary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form div {
+  margin-bottom: 1em;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 90%;
+  padding: 0.8em;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.contact-form button {
+  width: 50%;
+  padding: 0.8em;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-top: 1em;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+
+/* Grilă pentru știri */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+  margin-top: 2em;
+}
+
+/* Grilă pentru cardurile meciurilor */
+.matches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
+  margin-top: 2em;
+}
+
+/* Cardurile meciurilor */
+.match-card {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 1.5em;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.match-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-color);
+}
+
+.match-card h3 {
+  color: var(--primary-color);
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.match-card p {
+  margin: 0.5em 0;
+  color: var(--text-color);
+}
+
+/* Stilizare carousel */
+/* Stilizare carousel */
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 400px; /* Dimensiune fixă pentru carousel */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  gap: 1em;
+}
+
+.carousel-slide img {
+  width: 300px; /* Dimensiune fixă pentru imagini */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Eliminăm orice ciudățenie de tip border */
+  object-fit: cover;
+}
+
+.carousel-text {
+  margin-top: 1em; /* Textul sub imagine */
+  text-align: center;
+  font-size: 1.2em;
+  color: #333; /* Text întunecat pentru vizibilitate */
+  font-weight: bold;
+  max-width: 90%;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  font-size: 1.5em;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+
+.carousel-btn.left {
+  left: 20px; /* Poziție fixă */
+}
+
+.carousel-btn.right {
+  right: 20px; /* Poziție fixă */
+}
+
