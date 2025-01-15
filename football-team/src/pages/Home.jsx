@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../Home.css';
+import '../styles/Home.css';
 import liverpool1 from '../images/carousel/liverpool1.jpg';
 import liverpool2 from '../images/carousel/liverpool2.jpg';
 import liverpool3 from '../images/carousel/liverpool3.jpg';

@@ -1,0 +1,28 @@
+.contact-form {
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 90%;
+    padding: 0.8em;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .contact-form button {
+    width: 50%;
+    padding: 0.8em;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+  }
+  

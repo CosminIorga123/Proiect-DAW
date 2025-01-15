@@ -1,0 +1,22 @@
+:root {
+    --primary-color: #c8102e;
+    --secondary-color: #ffffff;
+    --accent-color: #fbe122;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+  }
+  
+  main {
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  

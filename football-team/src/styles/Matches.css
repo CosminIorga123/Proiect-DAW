@@ -1,0 +1,36 @@
+.matches-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5em;
+    margin-top: 2em;
+  }
+  
+  .match-card {
+    background-color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 1.5em;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .match-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+  }
+  
+  .match-thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 1em;
+  }
+  
+  .match-thumbnails img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  

@@ -1,4 +1,3 @@
-/* Stilizare carousel */
 .carousel {
     position: relative;
     max-width: 100%;
@@ -23,7 +22,7 @@
   
   .carousel-text {
     position: absolute;
-    top: 20px; /* Mutăm textul în partea de sus */
+    top: 20px; 
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.6);
@@ -34,7 +33,7 @@
     max-width: 90%;
     font-size: 1.2em;
     font-weight: bold;
-    z-index: 2; /* Asigurăm că textul este deasupra imaginii */
+    z-index: 2;
   }
   
   .carousel-btn {

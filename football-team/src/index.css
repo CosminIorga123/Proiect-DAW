@@ -1,13 +1,11 @@
-/* Culori principale */
 :root {
-  --primary-color: #c8102e; /* Roșu Liverpool */
-  --secondary-color: #ffffff; /* Alb */
-  --accent-color: #fbe122; /* Galben pentru accente */
-  --text-color: #333; /* Negru pentru text */
-  --background-color: #f4f4f4; /* Fundal neutru */
+  --primary-color: #c8102e; 
+  --secondary-color: #ffffff; 
+  --accent-color: #fbe122; 
+  --text-color: #333; 
+  --background-color: #f4f4f4; 
 }
 
-/* Resetări de bază */
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
@@ -16,14 +14,12 @@ body {
   margin: 0;
 }
 
-/* Container principal */
 main {
   padding: 2em;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Header */
 header {
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -50,7 +46,6 @@ header h1 {
   font-weight: bold;
 }
 
-/* Navbar */
 .navbar {
   display: flex;
   justify-content: center;
@@ -71,7 +66,6 @@ header h1 {
   color: var(--primary-color);
 }
 
-/* Footer */
 footer {
   position: fixed;
   bottom: 0;
@@ -83,16 +77,15 @@ footer {
   text-align: center;
 }
 
-/* Carduri */
 .player-grid {
   display: flex;
-  flex-wrap: wrap; /* Permite cardurilor să treacă pe rânduri noi dacă e nevoie */
-  justify-content: center; /* Aliniază cardurile pe mijloc orizontal */
-  gap: 1.5em; /* Spațiere între carduri */
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 1.5em; 
   padding: 2em;
 }
 .player-card, .news-card {
-  flex: 0 0 200px; /* Dimensiune fixă pentru fiecare card */
+  flex: 0 0 200px; 
   background-color: var(--secondary-color);
   border: 2px solid var(--primary-color);
   border-radius: 10px;
@@ -118,7 +111,6 @@ footer {
   color: var(--primary-color);
 }
 
-/* Paginare */
 .pagination {
   display: flex;
   justify-content: center;
@@ -147,7 +139,6 @@ footer {
   font-weight: bold;
 }
 
-/* Hero și CTA */
 .hero, .cta {
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -167,15 +158,12 @@ footer {
   color: var(--primary-color);
 }
 
-/* Mesaje de eroare */
 .error {
   color: red;
   font-size: 0.9em;
   margin-top: 0.3em;
 }
 
-/* Formulare */
-/* Formular Contact */
 .contact-form {
   max-width: 600px;
   margin: 2em auto;
@@ -225,7 +213,6 @@ footer {
 }
 
 
-/* Grilă pentru știri */
 .news-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -233,7 +220,6 @@ footer {
   margin-top: 2em;
 }
 
-/* Grilă pentru cardurile meciurilor */
 .matches-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -241,7 +227,6 @@ footer {
   margin-top: 2em;
 }
 
-/* Cardurile meciurilor */
 .match-card {
   background-color: var(--secondary-color);
   border: 2px solid var(--primary-color);
@@ -268,14 +253,12 @@ footer {
   color: var(--text-color);
 }
 
-/* Stilizare carousel */
-/* Stilizare carousel */
 .carousel {
   position: relative;
   max-width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  height: 400px; /* Dimensiune fixă pentru carousel */
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -293,18 +276,18 @@ footer {
 }
 
 .carousel-slide img {
-  width: 300px; /* Dimensiune fixă pentru imagini */
+  width: 300px; 
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Eliminăm orice ciudățenie de tip border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   object-fit: cover;
 }
 
 .carousel-text {
-  margin-top: 1em; /* Textul sub imagine */
+  margin-top: 1em;
   text-align: center;
   font-size: 1.2em;
-  color: #333; /* Text întunecat pentru vizibilitate */
+  color: #333; 
   font-weight: bold;
   max-width: 90%;
 }
@@ -330,10 +313,9 @@ footer {
 }
 
 .carousel-btn.left {
-  left: 20px; /* Poziție fixă */
+  left: 20px; 
 }
 
 .carousel-btn.right {
-  right: 20px; /* Poziție fixă */
+  right: 20px; 
 }
-

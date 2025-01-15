@@ -1,0 +1,15 @@
+.player-card, .news-card, .match-card {
+    background-color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .player-card:hover, .news-card:hover, .match-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+  }
+  
